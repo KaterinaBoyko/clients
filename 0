@@ -1,0 +1,12 @@
+linear_model = LinearRegression()
+
+linear_model.fit(X_train, y_train)
+
+y_pred_linear = linear_model.predict(X_test)
+
+mse_linear = mean_squared_error(y_test, y_pred_linear)
+r2_linear = r2_score(y_test, y_pred_linear)
+
+mse_linear, r2_linear
+
+(0.1031907444501384, 0.031046659546977273)
